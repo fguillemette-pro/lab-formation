@@ -1,0 +1,10 @@
+- name: 1. install packages
+  apt: 
+    pkg: 
+    - htop
+    - tmux 
+    state: present
+- name: 2. install fail2ban
+  apt:
+    name: fail2ban
+    state: present
